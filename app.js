@@ -1,9 +1,13 @@
-//zomato api key   :   a14399473dda131cb917e581b48c21bb
+
 
 
 //express setup
 var express = require("express"),
     app = express();
+
+//adding the seeds file
+var seedDB = require("./seeds");
+seedDB();
 
 
 //to make requests
@@ -72,7 +76,7 @@ app.post("/register", function (req, res) {
   })
 });
 
-console.log(User.find({"name": "avid"}))
+
 
 //login routes
 app.get("/login", function(req, res) {
@@ -88,7 +92,8 @@ app.post("/login", passport.authenticate("local", {
 
 //index route
 app.get("/", function (req, res) {
-  res.render("index")
+  res.render("index", {currentUser: req.user});
+  //req.user gives the info about who is logged in
 });
 
 //this is where the search form gets posted
@@ -115,7 +120,7 @@ app.get("/:id", function (req, res) {
       //so that we can access the JSON files
       var searchResults = JSON.parse(body);
 
-      res.render("results", {searchResults: searchResults});
+      res.render("results", {searchResults: searchResults, currentUser: req.user});
     } else {
       console.log(error)
     }
