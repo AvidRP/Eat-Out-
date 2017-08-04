@@ -1,2 +1,4 @@
 # Eat-Out-
-A web app that lets users explore nearby restaurants. Built using HTML CSS and JS (jQuery) on the front-end and nodeJS mongodb mongoose express on the back-end
+Finding new and affordable restaurants near you can sometimes be a laborious task, especially when you have to fingure out stuff like whether the locations is really affordable and what kind of cuisines they serve. This is exactly the type of situation EatOut was created for. It displays all the restaurants near you that contain the keyword that the user inputs. 
+
+On the front end, this web app uses HTML, CSS and javascript. On the back end it uses Node.js (express) and MongoDB for database. The website uses zomato api to get data about the restaurants listed. It also includes user authentication (uses various node packages such as passport, passport-local, passport-local-mongoose, etc) allowing users to sign up and login. Once the user it logged in, it allows the user to add resturants to their list. 
