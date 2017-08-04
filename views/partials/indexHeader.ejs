@@ -28,8 +28,11 @@
     <!-- navbar -->
     <div class="ui borderless menu container-fluid">
       <div class="right menu">
-        <a class="item" href="/login"> <i class="fa fa-sign-in" aria-hidden="true"></i> &nbsp Login</a>
-        <a class="item" href="/register"> <i class="fa fa-user-plus" aria-hidden="true"></i> &nbsp Sign Up</a>
-        <a class="item" href="/logout"> <i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp Logout</a>
+        <%if(!currentUser) {%>
+          <a class="item" href="/login"> <i class="fa fa-sign-in" aria-hidden="true"></i> &nbsp Login</a>
+          <a class="item" href="/register"> <i class="fa fa-user-plus" aria-hidden="true"></i> &nbsp Sign Up</a>
+      <%  } else { %>
+          <a class="item" href="/logout"> <i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp Logout</a>
+        <%}%>
       </div>
     </div>
