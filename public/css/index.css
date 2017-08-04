@@ -1,0 +1,54 @@
+#center-text {
+  text-align: center;
+  padding-top: 25%;
+}
+
+html {
+  height: 100%;
+}
+
+div.input {
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+  background: url(../images/index1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+  background-attachment: fixed;
+}
+
+hr {
+    width: 50%;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 70px;
+  color:  #428bca;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+p {
+  color: white;
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+  font-weight: 800;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  color: #5cb85c;
+}
+.ui.borderless.menu {
+  background-color:    #3B5998;
+}

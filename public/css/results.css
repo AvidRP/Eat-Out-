@@ -1,0 +1,60 @@
+li {
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  /*color: 	#428bca;*/
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  color: 	#5cb85c;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  font-size: 60px;
+}
+
+.container {
+  text-align: center;
+}
+
+body, html {
+  background: url(../images/results.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
+	margin: 0;
+	background-attachment: fixed;
+}
+
+hr {
+  width: 50%;
+  border-color: 	#428bca;
+}
+.ui.borderless.menu {
+  background-color:  #3B5998;
+}
+.item a {
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 15px;
+}
+
+.option-buttons {
+  padding-top: 10px;
+}
+
+.infodiv {
+  padding-bottom: 15px;
+}

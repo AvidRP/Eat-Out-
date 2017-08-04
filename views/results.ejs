@@ -1,0 +1,31 @@
+<% include ./partials/resultsHeader %>
+
+  <div class="container">
+
+      <% for(var i = 0; i < searchResults.restaurants.length; i++) { %>
+        <ul>
+            <li><%= searchResults.restaurants[i].restaurant.name %> &nbsp
+              <div class="option-buttons">
+                <div class="infodiv">
+                  <button class="ui primary button infoButton">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i> More info
+                  </button>
+                  <div class="detailInfo">
+                    <p>Address : <%= searchResults.restaurants[i].restaurant.location.address %></p>
+                    <p>Cuisines : <%= searchResults.restaurants[i].restaurant.cuisines %></p>
+                    <p>Average cost for two: $<%= searchResults.restaurants[i].restaurant.average_cost_for_two %> </p>
+                    <p>Average Rating : <%= searchResults.restaurants[i].restaurant.user_rating.aggregate_rating %></p>
+                  </div>
+                </div>
+
+                <button class="ui button">
+                  <i class="fa fa-bookmark" aria-hidden="true"></i> Add to my list
+                </button>
+              </div>
+            </li>
+            <hr>
+        </ul>
+      <%}%>
+  </div>
+
+<% include ./partials/resultsFooter %>

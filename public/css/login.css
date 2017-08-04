@@ -1,0 +1,47 @@
+
+
+.container {
+  text-align: center;
+}
+
+body, html {
+  /*background: url(../images/results.jpg);*/
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
+	margin: 0;
+	background-attachment: fixed;
+}
+
+
+.ui.borderless.menu {
+  background-color:  #3B5998;
+}
+.item a {
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 15px;
+}
+
+.container {
+  padding-top: 10%;
+}
+
+.requiredField {
+  color: red;
+}
+
+.pageTitle {
+  padding-bottom: 30px;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}

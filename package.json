@@ -1,0 +1,30 @@
+{
+  "name": "eatout",
+  "version": "1.0.0",
+  "description": "A web app that lets users explore nearby restaurants. Built using HTML CSS and JS (jQuery) on the front-end and nodeJS mongodb mongoose express on the back-end",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AvidRP/Eat-Out-.git"
+  },
+  "author": "AvidRP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AvidRP/Eat-Out-/issues"
+  },
+  "homepage": "https://github.com/AvidRP/Eat-Out-#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.3",
+    "express-session": "^1.15.5",
+    "mongoose": "^4.11.5",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.0.0",
+    "request": "^2.81.0"
+  }
+}

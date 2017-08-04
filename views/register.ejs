@@ -1,0 +1,42 @@
+<% include ./partials/registerHeader %>
+<div class="container">
+  <div class="pageTitle">
+    <h1>Create an account</h1>
+    <p>It's free!</p>
+  </div>
+
+  <!-- Dont forget to add required!!  -->
+
+
+  <form action="/register" method="post">
+    <div class="ui equal width form">
+   <div class="fields">
+     <div class="field">
+       <label>Username<span class = "requiredField">*</span></label>
+       <input type="text" placeholder="Username" name = "username">
+     </div>
+     <div class="field">
+       <label>Password<span class = "requiredField">*</span></label>
+       <input type="password" placeholder = "Password" name = "password" >
+     </div>
+   </div>
+   <div class="fields">
+     <div class="field">
+       <label>First name<span class = "requiredField">*</span></label>
+       <input type="text" placeholder="First Name" >
+     </div>
+     <div class="field">
+       <label>Middle name</label>
+       <input type="text" placeholder="Middle Name">
+     </div>
+     <div class="field">
+       <label>Last name<span class = "requiredField">*</span></label>
+       <input type="text" placeholder="Last Name" >
+     </div>
+   </div>
+ </div>
+ <button class="large ui green basic button">Sign Up</button>
+  </form>
+</div>
+
+<% include ./partials/resultsFooter %>
